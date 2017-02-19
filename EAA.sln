@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E10FAD2-02AB-4A7A-8CA6-054555364593}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\cudd.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\cudd.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\cuddInt.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\cuddInt.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\cuddObj.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\cuddObj.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\dddmp.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\dddmp.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\dddmpInt.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\dddmpInt.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\epd.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\epd.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\mnemconf.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\mnemconf.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\mtr.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\mtr.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\mtrInt.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\mtrInt.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\st.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\st.h
+		..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\util.h = ..\..\Cpp_lib\CUDD_C\CUDDVC-2.5.0\CUDDVC-2.5.0\include\util.h
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EAA", "EAA.fsproj", "{82CB6C7E-747B-4EB0-8D16-0C98A203D529}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{82CB6C7E-747B-4EB0-8D16-0C98A203D529}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
