@@ -5,6 +5,7 @@ open System.IO
 open System.Text.RegularExpressions
 
 
+
 //DEFINITIONS
 (*read_file takes the name of the file to read it and returns the string list of the files lines*)
 let read_file filename = List.ofArray (File.ReadAllLines (filename)) 

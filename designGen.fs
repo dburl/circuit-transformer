@@ -46,7 +46,8 @@ let rhs2veril cirEl=
         |UnknGatOp -> printfn "[ERR]::UnknGatOp:rhs2veril";""
 
 //Functions that puts commas in after each str in lst except the last elemnt
-let commaFunc (strL: string list)=
-    let withCommans=List.dropLast strL |> List.map (fun str-> str+",")
+let commaFunc (strL: string list)= 
+    let withCommans= strL.[0..strL.Length-2] |> List.map (fun str-> str+",")
     let noComma=[List.last strL]
     List.append withCommans noComma
+    

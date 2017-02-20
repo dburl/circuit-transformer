@@ -89,7 +89,6 @@ let exeCmd (tclP:string)=
         proc.StartInfo.WorkingDirectory <- workDir// working directory
         let toRunStr="go.bat" // 
         proc.StartInfo.FileName <- toRunStr  // script to run
-            
         let st= proc.Start()//start
         proc.WaitForExit()// wait till the end
     with
@@ -98,14 +97,14 @@ let exeCmd (tclP:string)=
 // generate 1-line .bat file to start tcl script
 let genBatCall transType filename=
     let typeFolder= synthFolder+transType
-    let fileNameSplit=String.split [|'/';'.'|] filename
+    let fileNameSplit= String.split [|'/';'.'|] filename
     let cirFile= (List.nth (List.rev (Array.toList fileNameSplit)) 1)
     let prjFolder= typeFolder + cirFile+"/"
     let prjFoldStr= slashRepl prjFolder
     let allVerilFiles= IO.Directory.GetFiles(prjFolder)|> Array.toList
     let cirFileP=prjFolder+"go.bat"
     let stmWr=File.CreateText(cirFileP) //file creation
-    stmWr.WriteLine "C:\\Synopsys\\fpga_E2010091\\bin\\synplify.exe -batch run.tcl"
+    stmWr.WriteLine "synplify.exe -batch run.tcl"
     stmWr.Flush()
     stmWr.Close()// close file
 

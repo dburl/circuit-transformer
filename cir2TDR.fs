@@ -116,8 +116,7 @@ let cir2tdrF (cirD: cirDicT) voterL =
     let seqRenA= Array.append newInpA newOutA // renamed inputs and outputs
 
     let intIntBsA=  (Array.mapi2 (fun num oldName newName->"\t inpBlock iB"+num.ToString()+"(clk, "+oldName+", "+newName+", readBuff);") inpStrA newInpA) |> Array.toList
-    let outIntBsA=  (Array.mapi2 (fun num oldName newName->"\t outBlock oB"+num.ToString()+
-                                    "(clk, "+newName+", "+oldName+", save, rollBack, subst, failOuts["+num.ToString()+"]);") outStrA newOutA) |> Array.toList
+    let outIntBsA=  (Array.mapi2 (fun num oldName newName->"\t outBlock oB"+num.ToString()+"(clk, "+newName+", "+oldName+", save, rollBack, subst, failOuts["+num.ToString()+"]);") outStrA newOutA) |> Array.toList
    
     //instantiate redundant blocks - function
     let instansRedModStr interfSeqStr=

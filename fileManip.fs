@@ -43,6 +43,7 @@ let outNameF filename folderPath=
     let fileNameSplit=String.split [|'/';'.'|] filename // split the name to the folder directory&cir file
     let fileOutName= List.head (List.tail (List.rev (Array.toList fileNameSplit)))// name of the file
     let filePath= folderPath+fileOutName+".v" // adding the file extension
+    let dirInfo=System.IO.Directory.CreateDirectory folderPath // create contaning folder if does not exist
     filePath
 
 let genCirFiles transformType filename cirFiles =
@@ -66,7 +67,7 @@ let getParents (hops:int) =
 
 // 
 let synthFolder= 
-    let symFolder= getParents 3 // go up four folders in the folder tree
+    let symFolder= getParents 0 // go up four folders in the folder tree
     let xilinxP= symFolder+"/"+"synthRes/" //defines the synthesis folder
     xilinxP
     

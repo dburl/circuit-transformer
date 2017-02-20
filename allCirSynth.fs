@@ -72,7 +72,7 @@ let cirSynth (voterComm:string list) (cirP: string)=
 
 // for all memory cells in ITC'99 benchmark
 let itcSynth (vLL:string list list) =
-    let itcFolder= (getParents 3)+"/itc/" // absolut address of the folder with original non-transfromaed circuits
+    let itcFolder= (getParents 2)+"/itc/" // absolut address of the folder with original non-transfromaed circuits
     let allCirP= Directory.GetFiles(itcFolder) |>Array.toList // path to all found circuit benchmarks
     let allNum= List.length allCirP // number of found original circuits
     let givenVLL= // checks if we have to intro voters after each mem.cell in ALL found circuits (check for argument ~~FTMR) 
