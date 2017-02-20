@@ -84,7 +84,8 @@ let cpSynth transType filename=
     if not ifCirFoldExist then 
         ignore (Directory.CreateDirectory(cirFolder))
     // we get all supporting substitutional files' paths of the transformation method
-    let copyFrom =currDir+"/"+transType
+    //let copyFrom =currDir+"/"+transType
+    let copyFrom = (getParents 2)+"/components/"+transType
     let suppFull=Directory.GetFileSystemEntries(copyFrom) |> Array.toList //all supporting file in the Transformation Type folder
     let suppSplitL= (List.map (fun file-> String.split [|'/';'.'|] file) suppFull)
     let onlyFilesB= suppSplitL|> List.mapi 

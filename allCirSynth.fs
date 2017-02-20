@@ -71,15 +71,16 @@ let cirSynth (voterComm:string list) (cirP: string)=
   
 
 // for all memory cells in ITC'99 benchmark
-let itcSynth (vLL:string list list) =
+let itcSynth benchmarksNumber (vLL:string list list) =
     let itcFolder= (getParents 2)+"/itc/" // absolut address of the folder with original non-transfromaed circuits
     let allCirP= Directory.GetFiles(itcFolder) |>Array.toList // path to all found circuit benchmarks
-    let allNum= List.length allCirP // number of found original circuits
+    let circuitsToConsider=allCirP.[0..(min benchmarksNumber allCirP.Length)]
+    let allNum= List.length circuitsToConsider // number of found original circuits
     let givenVLL= // checks if we have to intro voters after each mem.cell in ALL found circuits (check for argument ~~FTMR) 
         match vLL with 
         |[["~~FTMR"]]-> List.map (fun _->["~FTMR"]) [1..allNum] // if yes, then we say say for each circuit separately to intro all voters (~FTMR)
         |_-> vLL // otherwise we introduce according to the user specification in list of list argument [[]]
     let emptyVN=allNum-(List.length givenVLL) // we just make sure that we don't introduce any voters to the circuits if user didn't specify it
     let voterLL= List.append givenVLL (List.map(fun _->[]) [1..emptyVN]) // see line above
-    List.iter2 (fun path voters-> cirSynth voters path) allCirP voterLL // for all circuits and correponding list of voters to intro, we call cirSynch (defined above)
+    List.iter2 (fun path voters-> cirSynth voters path) circuitsToConsider voterLL // for all circuits and correponding list of voters to intro, we call cirSynch (defined above)
     

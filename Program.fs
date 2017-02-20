@@ -31,8 +31,8 @@ open System.Diagnostics // cmd exe
 
 [<EntryPoint>]
 let main argv = 
- 
-    itcSynth [["~~FTMR"]] // transform, save, synthesize
+    let benchmarksNumber=4;
+    itcSynth benchmarksNumber [["~~FTMR"]] // transform, save, synthesize
                     // "~~FTMR"- voters everywhere (except primary outs)
                     // Romment this transformation/synthesis part out- to directly visualize the last synthesis results
 
