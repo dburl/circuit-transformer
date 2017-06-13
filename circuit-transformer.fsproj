@@ -80,24 +80,23 @@
       <HintPath>packages\ExtCore.0.8.46\lib\net45\ExtCore.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FSharp.Core">
+      <HintPath>packages\FSharp.Core.4.2.1\lib\net45\FSharp.Core.dll</HintPath>
+    </Reference>
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.PowerPack">
-      <HintPath>packages\FSPowerPack.Core.Community.2.0.0.0\lib\Net40\FSharp.PowerPack.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>packages\FSPowerPack.Core.Community.3.0.0.0\lib\Net40\FSharp.PowerPack.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack.Linq">
-      <HintPath>packages\FSPowerPack.Linq.Community.2.0.0.0\lib\Net40\FSharp.PowerPack.Linq.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>packages\FSPowerPack.Linq.Community.3.0.0.0\lib\Net40\FSharp.PowerPack.Linq.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack.Metadata">
-      <HintPath>packages\FSPowerPack.Metadata.Community.2.0.0.0\lib\Net40\FSharp.PowerPack.Metadata.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>packages\FSPowerPack.Metadata.Community.3.0.0.0\lib\Net40\FSharp.PowerPack.Metadata.dll</HintPath>
     </Reference>
     <Reference Include="FSharp.PowerPack.Parallel.Seq">
-      <HintPath>packages\FSPowerPack.Parallel.Seq.Community.2.0.0.0\lib\Net40\FSharp.PowerPack.Parallel.Seq.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>packages\FSPowerPack.Parallel.Seq.Community.3.0.0.0\lib\Net40\FSharp.PowerPack.Parallel.Seq.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel">
       <HintPath>lib\Microsoft.Office.Interop.Excel.dll</HintPath>
